@@ -135,7 +135,8 @@ public class Method {
     }//End existCar
     
     /*
-    
+    Generate a number
+    @return a number
     */
     public int generateRegistryNumber() {
         
@@ -159,6 +160,9 @@ public class Method {
         
     }//End generateRegistryNumber
     
+    /*
+    Show a message at user
+    */
     public void messageError() {
         JOptionPane.showMessageDialog(null, "Missing a field", "Uuniversidad de Costa Rica", JOptionPane.ERROR_MESSAGE);
     }

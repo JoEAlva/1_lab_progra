@@ -31,6 +31,7 @@ public class Controller_Main implements ActionListener {
             
             System.out.print("F");
             method.consultCar(fRM_Main.get_jT_RegistryNumber());
+            fRM_Main.set_jT_CarInformation(method.get_vectorInformationCar());
             
         }
         

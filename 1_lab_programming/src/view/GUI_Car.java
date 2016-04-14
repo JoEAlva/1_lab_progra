@@ -77,6 +77,12 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jT_Id_Car.setText("");
         
     }//End clean_jT
+    
+    public void addRegisterNumber(String registerNumber) {
+        
+        this.jT_RegistryNumber.setText(registerNumber);
+        
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

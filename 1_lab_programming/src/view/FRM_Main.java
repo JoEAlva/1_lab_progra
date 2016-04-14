@@ -59,6 +59,12 @@ public class FRM_Main extends javax.swing.JFrame {
         
     }//End clean_jT
     
+    public void addRegisterNumber(String registerNumber) {
+        
+        this.gUI_Car1.addRegisterNumber(registerNumber);
+        
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

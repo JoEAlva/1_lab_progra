@@ -73,6 +73,19 @@ public class Method {
     }//End modifyCar
     
     /*
+    
+    */
+    public void deleteCar(String registryNumber) {
+        
+        if(existCar(registryNumber)) {
+            
+            arrayCar.remove(indexCar(registryNumber));
+            
+        }
+        
+    }
+    
+    /*
     This method find a index
     @param value of idCar
     */
@@ -132,7 +145,7 @@ public class Method {
             
             for(int j = 0; j<arrayCar.size(); j++) {
                 
-                registryNumber = arrayCar.size();
+                registryNumber = arrayCar.size()+1;
                 
             }
             

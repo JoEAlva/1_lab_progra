@@ -20,8 +20,21 @@ public class FRM_Main extends javax.swing.JFrame {
         
         controller_Main = new Controller_Main(this);//Instance
         this.gUI_Car1.addControllerButtons(controller_Main);
+        this.gUI_Car1.initialState();
        
     } 
+    
+    public void afterAdd() {
+        
+        this.gUI_Car1.afterAdd();
+        
+    }//End afterAdd
+    
+    public void afterModify() {
+        
+        this.gUI_Car1.afterModify();
+        
+    }//End afterModify
     
     /*
     

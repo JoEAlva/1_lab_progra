@@ -139,7 +139,6 @@ public class Method {
     public int generateRegistryNumber() {
         
         int registryNumber = 0;
-        boolean x = false;
         
         if(arrayCar.isEmpty()) {
             
@@ -153,6 +152,7 @@ public class Method {
                 
             }
             
+                        
         }
         
         return registryNumber;

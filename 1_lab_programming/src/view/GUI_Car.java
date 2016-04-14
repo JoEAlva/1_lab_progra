@@ -84,6 +84,27 @@ public class GUI_Car extends javax.swing.JPanel {
         
     }
     
+    public void initialState() {
+        
+        this.jB_Consult.setEnabled(false);
+        this.jB_Modify.setEnabled(false);
+        this.jB_Delete.setEnabled(false);
+        
+    }
+    
+    public void afterAdd() {
+        
+        this.jB_Consult.setEnabled(true);
+        
+    }//End afterAdd
+    
+    public void afterModify() {
+        
+        this.jB_Modify.setEnabled(true);
+        this.jB_Delete.setEnabled(true);
+        
+    }//End after odify
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

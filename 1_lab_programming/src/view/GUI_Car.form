@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="jL_OwnerName" max="32767" attributes="0"/>
+                          <Component id="jL_RegistryNumber" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jT_RegistryNumber" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jT_Id_Owner" max="32767" attributes="0"/>
+                                  <Component id="jT_OwnerName" max="32767" attributes="0"/>
+                                  <Component id="jT_Id_Car" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jB_Consult" pref="87" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jB_Add" min="-2" pref="81" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jB_Modify" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jB_Delete" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jL_idCar" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jL_Owner" alignment="0" pref="93" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jL_RegistryNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jT_RegistryNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jL_OwnerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jT_OwnerName" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jL_Owner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jT_Id_Owner" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jT_Id_Car" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jL_idCar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jB_Delete" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jB_Consult" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jB_Add" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jB_Modify" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jL_RegistryNumber">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="REGISTRY NUMBER"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jT_RegistryNumber">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jL_OwnerName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OWNER NAME"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jT_OwnerName">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jL_Owner">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID-OWNER"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jT_Id_Owner">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jL_idCar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID-CAR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jT_Id_Car">
+    </Component>
+    <Component class="javax.swing.JButton" name="jB_Consult">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CONSULT"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jB_Add">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ADD"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jB_Modify">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MODIFY"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jB_Delete">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DELETE"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -29,15 +29,14 @@ public class Controller_Main implements ActionListener {
         
         if(e.getActionCommand().equals("CONSULT")) {
             
-            System.out.print("F");
             method.consultCar(fRM_Main.get_jT_RegistryNumber());
             fRM_Main.set_jT_CarInformation(method.get_vectorInformationCar());
+            method.clean_vectorInformationCar();
             
         }
         
         if(e.getActionCommand().equals("ADD")) {
             
-            System.out.print("F");
             method.addCar(fRM_Main.get_jT_CarInformation());
             fRM_Main.clean_jT();
             fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
@@ -46,19 +45,26 @@ public class Controller_Main implements ActionListener {
         
         if(e.getActionCommand().equals("MODIFY")) {
             
-            System.out.print("F");
             method.modifyCar(fRM_Main.get_jT_RegistryNumber(), fRM_Main.get_jT_CarInformation());
             fRM_Main.clean_jT();
+            fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
                        
         }
         
         if(e.getActionCommand().equals("DELETE")) {
             
-            System.out.print("F");
             method.deleteCar(fRM_Main.get_jT_RegistryNumber());
             fRM_Main.clean_jT();
+            fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
             
         }
+        
+    }
+    
+    public void getMethodConsult() {
+        
+        method.consultCar(fRM_Main.get_jT_RegistryNumber());
+        fRM_Main.set_jT_CarInformation(method.get_vectorInformationCar());
         
     }
     

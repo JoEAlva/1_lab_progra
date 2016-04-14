@@ -46,6 +46,14 @@ public class Method {
         
     }//End get_vectorInformationCar
     
+    public void clean_vectorInformationCar() {
+        vectorInformationCar[0] = "";
+        vectorInformationCar[1] = "";
+        vectorInformationCar[2] = "";
+        vectorInformationCar[3] = "";
+        
+    }
+    
     /*
     This add a new Car into arrayCar
     @param infoCar is a vector with car´s information
@@ -77,12 +85,8 @@ public class Method {
     */
     public void deleteCar(String registryNumber) {
         
-        if(existCar(registryNumber)) {
-            
-            arrayCar.remove(indexCar(registryNumber));
-            
-        }
-        
+        arrayCar.remove(indexCar(registryNumber));
+    
     }
     
     /*

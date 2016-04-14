@@ -83,6 +83,7 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jT_RegistryNumber.setText(registerNumber);
         
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -199,7 +200,7 @@ public class GUI_Car extends javax.swing.JPanel {
         
         if(evt.getKeyCode() == 10) {
             
-            System.out.println("Funcionó");
+            controller_Main.getMethodConsult();
             
         }
         

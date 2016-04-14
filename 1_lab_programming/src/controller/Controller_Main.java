@@ -14,7 +14,7 @@ import model.Method;
  * @author JorgeIgnacio
  */
 public class Controller_Main implements ActionListener {
-
+    //Hola
     FRM_Main fRM_Main;//Reference
     Method method;//Reference
     

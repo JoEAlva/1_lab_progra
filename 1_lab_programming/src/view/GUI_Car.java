@@ -104,6 +104,7 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jB_Add.setEnabled(false);
         this.jB_Modify.setEnabled(true);
         this.jB_Delete.setEnabled(true);
+        this.jT_RegistryNumber.setEnabled(false);
         
     }//End after odify
     
@@ -113,7 +114,8 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jB_Add.setEnabled(true);
         this.jB_Modify.setEnabled(false);
         this.jB_Delete.setEnabled(false);
-        
+        this.jT_RegistryNumber.setEnabled(true);
+                
     }//End after odify
     
     

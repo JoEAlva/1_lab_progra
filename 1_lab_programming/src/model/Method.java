@@ -148,7 +148,7 @@ public class Method {
             
             for(int j = 0; j<arrayCar.size(); j++) {
                 
-                registryNumber = arrayCar.size()+1;
+                registryNumber = Integer.parseInt(arrayCar.get(j).getRegistryNumber())+1;
                 
             }
                                     

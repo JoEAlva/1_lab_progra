@@ -4,19 +4,79 @@
  * and open the template in the editor.
  */
 package view;
-
+import controller.Controller_Main;
 /**
  *
  * @author JorgeIgnacio
  */
 public class GUI_Car extends javax.swing.JPanel {
 
+    Controller_Main controller_Main;//Reference
     /**
      * Creates new form GUI_Car
      */
     public GUI_Car() {
         initComponents();
+        addControllerButtons(controller_Main);
     }
+    
+    public void addControllerButtons(Controller_Main controller_Main) {
+        
+        this.controller_Main = controller_Main;
+        
+        this.jB_Consult.addActionListener(controller_Main);
+        this.jB_Add.addActionListener(controller_Main);
+        this.jB_Modify.addActionListener(controller_Main);
+        this.jB_Delete.addActionListener(controller_Main);
+        
+    }
+    
+    /*
+    
+    */
+    public String[] get_jT_CarInformation() {
+        
+        String vector[] = new String[4];
+        
+        vector[0] = this.jT_RegistryNumber.getText();
+        vector[1] = this.jT_OwnerName.getText();
+        vector[2] = this.jT_Id_Owner.getText();
+        vector[3] = this.jT_Id_Car.getText();
+               
+        return vector;
+                
+    }//End get_jT_CarInformation
+    
+    /*
+    
+    */
+    public void set_jT_CarInformation(String vector[]) {
+        
+        this.jT_RegistryNumber.setText(vector[0]);
+        this.jT_OwnerName.setText(vector[1]);
+        this.jT_Id_Owner.setText(vector[2]);
+        this.jT_Id_Car.setText(vector[3]);
+                
+    }//End set_jT_CarInformation
+    
+    /*
+    
+    */
+    public String get_jT_RegistryNumber() {
+        return this.jT_RegistryNumber.getText();
+    }//End get_jT_RegistryNumber
+    
+    /*
+    
+    */
+    public void clean_jT() {
+        
+        this.jT_RegistryNumber.setText("");
+        this.jT_OwnerName.setText("");
+        this.jT_Id_Owner.setText("");
+        this.jT_Id_Car.setText("");
+        
+    }//End clean_jT
 
     /**
      * This method is called from within the constructor to initialize the form.

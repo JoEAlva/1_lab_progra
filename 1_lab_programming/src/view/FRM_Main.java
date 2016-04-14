@@ -30,11 +30,20 @@ public class FRM_Main extends javax.swing.JFrame {
         
     }//End afterAdd
     
-    public void afterModify() {
+    public void afterConsult() {
         
-        this.gUI_Car1.afterModify();
+        this.gUI_Car1.afterConsult();
         
     }//End afterModify
+    
+    /*
+    
+    */
+    public void afterModify_or_Delete() {
+        
+        this.gUI_Car1.afterModify_or_Delete();
+        
+    }//End afterModify_or_Delete() {
     
     /*
     

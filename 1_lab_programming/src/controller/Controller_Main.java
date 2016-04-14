@@ -32,6 +32,7 @@ public class Controller_Main implements ActionListener {
             method.consultCar(fRM_Main.get_jT_RegistryNumber());
             fRM_Main.set_jT_CarInformation(method.get_vectorInformationCar());
             method.clean_vectorInformationCar();
+            fRM_Main.afterConsult();
             
         }
         
@@ -49,7 +50,7 @@ public class Controller_Main implements ActionListener {
             method.modifyCar(fRM_Main.get_jT_RegistryNumber(), fRM_Main.get_jT_CarInformation());
             fRM_Main.clean_jT();
             fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
-            fRM_Main.afterModify();
+            fRM_Main.afterModify_or_Delete();
                        
         }
         
@@ -58,6 +59,7 @@ public class Controller_Main implements ActionListener {
             method.deleteCar(fRM_Main.get_jT_RegistryNumber());
             fRM_Main.clean_jT();
             fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
+            fRM_Main.afterModify_or_Delete();
             
         }
         
@@ -67,7 +69,7 @@ public class Controller_Main implements ActionListener {
         
         method.consultCar(fRM_Main.get_jT_RegistryNumber());
         fRM_Main.set_jT_CarInformation(method.get_vectorInformationCar());
-        fRM_Main.afterModify();
+        fRM_Main.afterConsult();
         
     }
     

@@ -98,12 +98,24 @@ public class GUI_Car extends javax.swing.JPanel {
         
     }//End afterAdd
     
-    public void afterModify() {
+    public void afterConsult() {
         
+        this.jB_Consult.setEnabled(false);
+        this.jB_Add.setEnabled(false);
         this.jB_Modify.setEnabled(true);
         this.jB_Delete.setEnabled(true);
         
     }//End after odify
+    
+    public void afterModify_or_Delete() {
+        
+        this.jB_Consult.setEnabled(true);
+        this.jB_Add.setEnabled(true);
+        this.jB_Modify.setEnabled(false);
+        this.jB_Delete.setEnabled(false);
+        
+    }//End after odify
+    
     
 
     /**

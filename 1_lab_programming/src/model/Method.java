@@ -151,12 +151,11 @@ public class Method {
                 registryNumber = arrayCar.size()+1;
                 
             }
-            
-                        
+                                    
         }
         
         return registryNumber;
         
-    }
+    }//End generateRegistryNumber
         
 }//End Method

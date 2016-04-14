@@ -37,11 +37,11 @@ public class Controller_Main implements ActionListener {
         }
         
         if(e.getActionCommand().equals("ADD")) {
-            
-            method.addCar(fRM_Main.get_jT_CarInformation());
-            fRM_Main.clean_jT();
-            fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
-            fRM_Main.afterAdd();
+                
+                method.addCar(fRM_Main.get_jT_CarInformation());
+                fRM_Main.clean_jT();
+                fRM_Main.addRegisterNumber(""+method.generateRegistryNumber());
+                fRM_Main.afterAdd(); 
             
         }
         

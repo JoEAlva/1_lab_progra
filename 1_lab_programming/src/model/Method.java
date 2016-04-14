@@ -5,6 +5,7 @@
  */
 package model;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 /**
  *
  * @author JorgeIgnacio
@@ -157,5 +158,9 @@ public class Method {
         return registryNumber;
         
     }//End generateRegistryNumber
+    
+    public void messageError() {
+        JOptionPane.showMessageDialog(null, "Missing a field", "Uuniversidad de Costa Rica", JOptionPane.ERROR_MESSAGE);
+    }
         
 }//End Method

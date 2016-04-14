@@ -116,8 +116,7 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jB_Delete.setEnabled(false);
         this.jT_RegistryNumber.setEnabled(true);
                 
-    }//End after odify
-    
+    }//End after odify  
     
 
     /**

@@ -24,14 +24,14 @@ public class Method {
     This method search a car in arraycar
     @param value of idCar
     */
-    public void consultCar(String idCar) {
+    public void consultCar(String registryNumber) {
         
-        if(existCar(idCar)) {
+        if(existCar(registryNumber)) {
             
-            vectorInformationCar[0] = arrayCar.get(indexCar(idCar)).getRegistryNumber();
-            vectorInformationCar[1] = arrayCar.get(indexCar(idCar)).getOwnerName();
-            vectorInformationCar[2] = arrayCar.get(indexCar(idCar)).getIdOwner();
-            vectorInformationCar[3] = arrayCar.get(indexCar(idCar)).getIdCar();
+            vectorInformationCar[0] = arrayCar.get(indexCar(registryNumber)).getRegistryNumber();
+            vectorInformationCar[1] = arrayCar.get(indexCar(registryNumber)).getOwnerName();
+            vectorInformationCar[2] = arrayCar.get(indexCar(registryNumber)).getIdOwner();
+            vectorInformationCar[3] = arrayCar.get(indexCar(registryNumber)).getIdCar();
             
         }
         
@@ -60,9 +60,15 @@ public class Method {
     /*
     
     */
-    public void modifyCar(String inforCar[]) {
+    public void modifyCar(String registryNumber, String infoCar[]) {
         
-        
+        if(existCar(registryNumber)) {
+            
+            arrayCar.get(indexCar(registryNumber)).setOwnerName(infoCar[0]);
+            arrayCar.get(indexCar(registryNumber)).setIdOwner(infoCar[1]);
+            arrayCar.get(indexCar(registryNumber)).setIdCar(infoCar[2]);
+            
+        }
         
     }//End modifyCar
     

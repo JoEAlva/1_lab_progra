@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Method {
 
     ArrayList<Car> arrayCar; //Reference
-    String vectorInformationCar[] = new String [4];
+    public String vectorInformationCar[] = new String [4];
     
     public Method() {
         
@@ -76,13 +76,13 @@ public class Method {
     This method find a index
     @param value of idCar
     */
-    public int indexCar(String idCar) {
+    public int indexCar(String registryNumber) {
         
         int index = 0;
         
         for(int j = 0; j<arrayCar.size(); j++) {
             
-            if(arrayCar.get(j).getIdCar().equals(idCar)) {
+            if(arrayCar.get(j).getRegistryNumber().equals(registryNumber)) {
                 
                 index = j;
                 
@@ -98,13 +98,13 @@ public class Method {
     This method know if a car exist
     @param value of idCar
     */
-    public boolean existCar(String idCar) {
+    public boolean existCar(String registryNumber) {
         
         boolean exist = false;
         
         for(int j = 0; j<arrayCar.size(); j++) {
             
-            if(arrayCar.get(j).getIdCar().equals(idCar)) {
+            if(arrayCar.get(j).getRegistryNumber().equals(registryNumber)) {
                 
                 exist = true;
                 
@@ -115,5 +115,31 @@ public class Method {
         return exist;
         
     }//End existCar
+    
+    /*
+    
+    */
+    public int generateRegistryNumber() {
+        
+        int registryNumber = 0;
+        boolean x = false;
+        
+        if(arrayCar.isEmpty()) {
+            
+            registryNumber = 1;
+            
+        }else {
+            
+            for(int j = 0; j<arrayCar.size(); j++) {
+                
+                registryNumber = arrayCar.size();
+                
+            }
+            
+        }
+        
+        return registryNumber;
+        
+    }
         
 }//End Method

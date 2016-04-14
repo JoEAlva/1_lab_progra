@@ -17,9 +17,11 @@ public class FRM_Main extends javax.swing.JFrame {
      */
     public FRM_Main() {
         initComponents();
+        
         controller_Main = new Controller_Main(this);//Instance
         this.gUI_Car1.addControllerButtons(controller_Main);
-    }
+       
+    } 
     
     /*
     

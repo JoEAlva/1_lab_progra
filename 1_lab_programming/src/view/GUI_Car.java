@@ -28,7 +28,7 @@ public class GUI_Car extends javax.swing.JPanel {
         this.jB_Add.addActionListener(controller_Main);
         this.jB_Modify.addActionListener(controller_Main);
         this.jB_Delete.addActionListener(controller_Main);
-        
+                
     }
     
     /*
@@ -101,6 +101,12 @@ public class GUI_Car extends javax.swing.JPanel {
         jB_Delete = new javax.swing.JButton();
 
         jL_RegistryNumber.setText("REGISTRY NUMBER");
+
+        jT_RegistryNumber.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jT_RegistryNumberKeyPressed(evt);
+            }
+        });
 
         jL_OwnerName.setText("OWNER NAME");
 
@@ -182,6 +188,16 @@ public class GUI_Car extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jT_RegistryNumberKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jT_RegistryNumberKeyPressed
+        
+        if(evt.getKeyCode() == 10) {
+            
+            System.out.println("Funcionó");
+            
+        }
+        
+    }//GEN-LAST:event_jT_RegistryNumberKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

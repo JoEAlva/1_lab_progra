@@ -7,6 +7,8 @@ package controller;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import view.FRM_Main;
+import model.Method;
+
 /**
  *
  * @author JorgeIgnacio
@@ -14,27 +16,40 @@ import view.FRM_Main;
 public class Controller_Main implements ActionListener {
 
     FRM_Main fRM_Main;//Reference
+    Method method;//Reference
     
     public Controller_Main(FRM_Main fRM_Main) {
+        
         this.fRM_Main = fRM_Main;
+        method = new Method();
+        
     }
    
     public void actionPerformed(ActionEvent e) {
         
         if(e.getActionCommand().equals("CONSULT")) {
+            
             System.out.print("F");
+            
         }
         
         if(e.getActionCommand().equals("ADD")) {
+            
             System.out.print("F");
+                        
+            
         }
         
         if(e.getActionCommand().equals("MODIFY")) {
+            
             System.out.print("F");
+            
         }
         
         if(e.getActionCommand().equals("DELETE")) {
+            
             System.out.print("F");
+            
         }
         
     }
